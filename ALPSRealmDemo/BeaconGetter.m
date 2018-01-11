@@ -8,6 +8,8 @@
 
 #import "BeaconGetter.h"
 #import <ALPS/ALPS.h>
+#import <ALPS/ALPSStoredBeacon.h>
+
 
 @implementation BeaconGetter
 -(void)connectAndFindBeacons {
@@ -34,7 +36,6 @@
                                      NSLog(@"logged in user: %@", user);
                                      NSLog(@"remoteRealmURL: %@", remoteRealmURL.absoluteString);
                                      config.syncConfiguration = [[RLMSyncConfiguration alloc] initWithUser:user realmURL:remoteRealmURL];
-                                     
                                      [RLMRealm asyncOpenWithConfiguration:config callbackQueue:dispatch_get_main_queue() callback:^(RLMRealm *realm, NSError *error) {
                                          NSLog(@"returned realm: %@", realm);
                                          if (error) {

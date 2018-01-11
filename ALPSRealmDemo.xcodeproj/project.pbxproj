@@ -14,9 +14,9 @@
 		5B3686801FD9EC2000CBEB84 /* ALPSRealmDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B36867F1FD9EC2000CBEB84 /* ALPSRealmDemoTests.swift */; };
 		5B36868B1FD9EC2000CBEB84 /* ALPSRealmDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B36868A1FD9EC2000CBEB84 /* ALPSRealmDemoUITests.swift */; };
 		5B3687071FDC911600CBEB84 /* Pods_ALPSRealmDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07D80714382C12779E31D69 /* Pods_ALPSRealmDemo.framework */; };
+		5B8510C3200817270068C92E /* ALPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8510C1200817210068C92E /* ALPS.framework */; };
+		5B8510C4200817270068C92E /* ALPS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8510C1200817210068C92E /* ALPS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BFE86111FDF28080054ACF4 /* BeaconGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE86101FDF28080054ACF4 /* BeaconGetter.m */; };
-		5BFE86851FE222B30054ACF4 /* ALPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFE86831FE222A70054ACF4 /* ALPS.framework */; };
-		5BFE86861FE222B30054ACF4 /* ALPS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFE86831FE222A70054ACF4 /* ALPS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5ED60044FAC6A127A0173A8 /* Pods_ALPSRealmDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C478871C0BED95C2580DB3E /* Pods_ALPSRealmDemoTests.framework */; };
 		D679969585CC4EAA2CA6664E /* Pods_ALPSRealmDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DCE9D9760AB1CAC3EFC113 /* Pods_ALPSRealmDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5BFE86861FE222B30054ACF4 /* ALPS.framework in Embed Frameworks */,
+				5B8510C4200817270068C92E /* ALPS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,11 +70,11 @@
 		5B3686861FD9EC2000CBEB84 /* ALPSRealmDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALPSRealmDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B36868A1FD9EC2000CBEB84 /* ALPSRealmDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALPSRealmDemoUITests.swift; sourceTree = "<group>"; };
 		5B36868C1FD9EC2000CBEB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B8510C1200817210068C92E /* ALPS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALPS.framework; sourceTree = "<group>"; };
 		5B945A551FDF180A00BC6204 /* ALPSRealmDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALPSRealmDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		5BFE860E1FDF28080054ACF4 /* ALPSRealmDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ALPSRealmDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		5BFE860F1FDF28080054ACF4 /* BeaconGetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconGetter.h; sourceTree = "<group>"; };
 		5BFE86101FDF28080054ACF4 /* BeaconGetter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconGetter.m; sourceTree = "<group>"; };
-		5BFE86831FE222A70054ACF4 /* ALPS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ALPS.framework; sourceTree = "<group>"; };
 		8F6C9DF1800DF63575DD2F02 /* Pods-ALPSRealmDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPSRealmDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALPSRealmDemoUITests/Pods-ALPSRealmDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BFD924B5887F12C0C50BF0F4 /* Pods-ALPSRealmDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALPSRealmDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALPSRealmDemoTests/Pods-ALPSRealmDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7DCE9D9760AB1CAC3EFC113 /* Pods_ALPSRealmDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALPSRealmDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BFE86851FE222B30054ACF4 /* ALPS.framework in Frameworks */,
+				5B8510C3200817270068C92E /* ALPS.framework in Frameworks */,
 				5B3687071FDC911600CBEB84 /* Pods_ALPSRealmDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,7 +181,7 @@
 		FF8AD2EE262415347F5A1F7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5BFE86831FE222A70054ACF4 /* ALPS.framework */,
+				5B8510C1200817210068C92E /* ALPS.framework */,
 				F07D80714382C12779E31D69 /* Pods_ALPSRealmDemo.framework */,
 				3C478871C0BED95C2580DB3E /* Pods_ALPSRealmDemoTests.framework */,
 				C7DCE9D9760AB1CAC3EFC113 /* Pods_ALPSRealmDemoUITests.framework */,
